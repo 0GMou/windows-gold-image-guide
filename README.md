@@ -35,6 +35,8 @@ Begin by creating a new Virtual Machine in Hyper-V Manager.
 ## Step 2: Configuring the Virtual Machine
 Configure the VM settings, ensuring you attach the Windows ISO for installation.
 
+**⚠️ CRITICAL WARNING:** You **MUST** disable Automatic Checkpoints in the Hyper-V settings for this VM, and you must **NOT** manually create any checkpoints during this entire process. If the VM has checkpoints, you will not be able to attach the resulting VHDX to the Windows Disk Management tool later on for the final image capture.
+
 ![Config 1](image_captures/002_config/hyperv_cfg_001.PNG)
 ![Config 2](image_captures/002_config/hyperv_cfg_002.PNG)
 ![Config 3](image_captures/002_config/hyperv_cfg_003.PNG)
