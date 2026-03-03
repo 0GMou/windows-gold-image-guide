@@ -55,9 +55,7 @@ Under the **Processor** tab, increase the number of virtual processors (e.g., to
 In the **Integration Services** section, ensure that "Guest services" is checked to allow better interaction between the host and the virtual machine.
 ![Config 3](image_captures/002_config/hyperv_cfg_003.PNG)
 
-**⚠️ CRITICAL WARNING:** You **MUST** disable Automatic Checkpoints in the Hyper-V settings for this VM (as shown in the image below), and you must **NOT** manually create any checkpoints during this entire process. If the VM has checkpoints, you will not be able to attach the resulting VHDX to the Windows Disk Management tool later on for the final image capture.
-
-Navigate to the **Checkpoints** tab and uncheck "Enable checkpoints".
+**⚠️ CRITICAL WARNING:** You **MUST** disable Automatic Checkpoints in the Hyper-V settings for this VM, and you must **NOT** manually create any checkpoints during this entire process. If the VM has checkpoints, you will not be able to attach the resulting VHDX to the Windows Disk Management tool later on for the final image capture. Navigate to the **Checkpoints** tab and uncheck "Enable checkpoints".
 ![Config 4](image_captures/002_config/hyperv_cfg_004.PNG)
 
 ---
@@ -67,15 +65,14 @@ Navigate to the **Checkpoints** tab and uncheck "Enable checkpoints".
 Power on the VM and open the console connection.
 ![Start 1](image_captures/003_start/hyperv_start_001.PNG)
 
-You will see a prompt asking you to "Press any key to boot from CD or DVD". 
+**Troubleshooting: Missed the boot prompt?**
+When the VM starts, you will see a prompt asking you to "Press any key to boot from CD or DVD". You must click inside the black virtual machine window to focus your mouse, and then press any key quickly.
 ![Start 2](image_captures/003_start/hyperv_start_002.PNG)
 
-**Troubleshooting: Missed the boot prompt?**
-In the screen above, you must click inside the black virtual machine window to focus your mouse, and then press any key quickly. If you do not do it in time, you will reach a "Boot Failure" screen like the one below:
+If you do not press a key in time, you will reach a "Boot Failure" screen. 
 ![Start 3](image_captures/003_start/hyperv_start_003.PNG)
 
-If you reach this error screen, your mouse will not work to click the "Restart" button. 
-**Fix:** Press the `TAB` key on your keyboard until the "Restart" button is highlighted, then press `ENTER` to restart the VM and take you back to the boot prompt.
+If you reach this error screen, your mouse will not work to click the "Restart" button. **Fix:** Press the `TAB` key on your keyboard until the "Restart" button is highlighted, then press `ENTER` to restart the VM and take you back to the boot prompt.
 ![Start 4](image_captures/003_start/hyperv_start_004.PNG)
 
 ---
@@ -110,10 +107,8 @@ Windows will now copy files and install. The VM will restart automatically durin
 
 ## Step 5: Audit Mode & System Preparation
 
-**CRITICAL:** After the installation restarts, you will reach the Out-Of-Box Experience (OOBE) screen asking for your region. **DO NOT** proceed normally.
+**CRITICAL:** After the installation restarts, you will reach the Out-Of-Box Experience (OOBE) screen asking for your region. **DO NOT** proceed normally. At this screen, press `CTRL` + `SHIFT` + `F3` on your keyboard. This interrupts the setup and reboots the system into **Audit Mode**.
 ![Audit 1](image_captures/005_audit/hyperv_audit_001.PNG)
-
-At this screen, press `CTRL` + `SHIFT` + `F3` on your keyboard. This interrupts the setup and reboots the system into **Audit Mode**.
 
 The system will display a loading screen while preparing the environment.
 ![Audit 2](image_captures/005_audit/hyperv_audit_002.PNG)
