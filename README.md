@@ -49,14 +49,15 @@ Start the VM and boot into the Windows Setup environment.
 
 ![Start 1](image_captures/003_start/hyperv_start_001.PNG)
 
-**Troubleshooting: Missed the boot prompt?**
-If you do not click inside the black virtual machine window and press a key in time, you might see a boot failure screen like this:
 ![Start 2](image_captures/003_start/hyperv_start_002.PNG)
 
-If you reach this screen, your mouse might not work to click "Restart" (as seen here):
+**Troubleshooting: Missed the boot prompt?**
+In the screen above (`hyperv_start_002.PNG`), you must click inside the black virtual machine window and press any key quickly. If you do not do it in time, you will reach a "Boot Failure" screen like this:
 ![Start 3](image_captures/003_start/hyperv_start_003.PNG)
 
-**Fix:** Press the `TAB` key on your keyboard until the "Restart" button is highlighted, then press `ENTER`:
+If you reach this error screen, your mouse will not work to click "Restart".
+
+**Fix:** Press the `TAB` key on your keyboard until the "Restart" button is highlighted, then press `ENTER` to restart the VM and take you back to the boot prompt:
 ![Start 4](image_captures/003_start/hyperv_start_004.PNG)
 
 ---
