@@ -128,7 +128,7 @@ Navigate to the **Checkpoints** tab and uncheck "Enable checkpoints".
 
 ## Step 5: Audit Mode & System Preparation
 
-**⚠️ CRITICAL WARNING:** After the installation restarts, you will reach the Out-Of-Box Experience (OOBE) screen asking for your region `"Let's start with region. Is this right?"`. DO NOT proceed normally. 
+**⚠️ CRITICAL WARNING:** After the installation restarts, you will reach the Out-of-Box Experience (OOBE) screen asking for your region `"Let's start with region. Is this right?"`. DO NOT proceed normally. 
 At this exact screen, press `[CTRL]` + `[SHIFT]` + `[F3]` on your keyboard. This interrupts the normal user setup and reboots the system into **Audit Mode**.
 
 ![Audit 1](image_captures/005_audit/hyperv_audit_001.PNG)
@@ -146,7 +146,7 @@ At this exact screen, press `[CTRL]` + `[SHIFT]` + `[F3]` on your keyboard. This
 ![Audit 4](image_captures/005_audit/hyperv_audit_004.PNG)
 
 ### System Cleanup in Audit Mode
-While in Audit mode, AFTER you customize your image (install your software, apply Windows updates, etc.). You must run a command in an elevated command prompt to ensure system integrity.
+While in Audit Mode, AFTER you customize your image (install your software, apply Windows updates, etc.). You must run a command in an elevated command prompt to ensure system integrity.
 
 Open the Start menu, type `cmd`, right-click on Command Prompt and run it as Administrator. Type the following command and press Enter:
 ```cmd
