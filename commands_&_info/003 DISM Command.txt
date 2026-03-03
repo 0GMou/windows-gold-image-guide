@@ -1,7 +1,0 @@
-Dism /Capture-Image /ImageFile:C:\ISO\install.wim /CaptureDir:D:\ /Name:"name_of_the_so"
-
-Tool:	   	Dism
-Exec		  /Capture-Image
-Parameter	/ImageFile:C:\ISO\install.wim		[Change the directory to you want it to save]
-Parameter	/CaptureDir:D:\				          [Change the "D" letter an put yours]
-Parameter	/Name:"name_of_the_so"			    [Change the name of the SO]
